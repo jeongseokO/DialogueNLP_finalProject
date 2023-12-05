@@ -10,6 +10,6 @@
 
 source /home/${USER}/.bashrc
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate env01
+conda activate js01
 
-srun python llama_test.py
+srun python test.py
