@@ -1,0 +1,5 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd-gpu-1: error: *** STEP 474.0 ON gpu-1 CANCELLED AT 2023-12-06T14:12:27 ***
+slurmstepd-gpu-1: error: *** JOB 474 ON gpu-1 CANCELLED AT 2023-12-06T14:12:27 ***
+srun: forcing job termination
