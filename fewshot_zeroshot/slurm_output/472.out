@@ -1,0 +1,27 @@
+Using GPU: 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.42s/it]
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:10<01:38, 10.99s/it] 20%|██        | 2/10 [00:12<00:43,  5.49s/it] 30%|███       | 3/10 [00:14<00:27,  3.94s/it] 40%|████      | 4/10 [00:17<00:20,  3.43s/it] 50%|█████     | 5/10 [00:27<00:29,  5.80s/it] 60%|██████    | 6/10 [00:30<00:19,  4.98s/it] 70%|███████   | 7/10 [00:36<00:16,  5.36s/it] 80%|████████  | 8/10 [00:43<00:11,  5.61s/it] 90%|█████████ | 9/10 [00:45<00:04,  4.51s/it]100%|██████████| 10/10 [00:50<00:00,  4.62s/it]100%|██████████| 10/10 [00:50<00:00,  5.00s/it]
+real_y: ['']
+pred_y: ['hotel-name:warkworth house', 'hotel-area:west', 'hotel-pricerange:moderate', 'hotel-bookday:tonight', 'hotel-bookpeople:3', 'hotel-internet:available']
+real_y: ['hotel-area:south', 'hotel-internet:yes', 'hotel-pricerange:moderate']
+pred_y: ['hotel-pricerange:moderate', 'hotel-area:south']
+real_y: ['hotel-area:south', 'hotel-internet:yes', 'hotel-pricerange:moderate']
+pred_y: ['hotel-name:bridge guest house', 'hotel-price-range:moderate', 'hotel-area:south', 'hotel-wifi:free']
+real_y: ['restaurant-area:south', 'restaurant-food:chinese', 'hotel-area:south', 'hotel-internet:yes', 'hotel-pricerange:moderate']
+pred_y: ['hotel-name:bridge guest house', 'hotel-price-range:moderate', 'hotel-area:south', 'hotel-wifi:free', 'attraction-name:chinese restaurant', 'attraction-area:near hotel']
+real_y: ['restaurant-name:restaurant alimentum']
+pred_y: ['restaurant-name:alimentum', 'attraction-area:citycenter', 'attraction-type:restaurant', 'dining-experience:modernitalian', 'bookday:tonight', 'booktime:7pm', 'leaveat:6:45pm', 'name:sarahjohnson', 'phone:555-555-5555']
+real_y: ['restaurant-name:restaurant alimentum']
+pred_y: ['restaurant-name:alimentum', 'attraction-area:south', 'attraction-type:restaurant', 'attraction-price-range:moderate', 'attraction-phone-number:01223413000', 'attraction-address:cb28pb 152 - 154 Hills Road']
+real_y: ['taxi-arriveby:20:00']
+pred_y: ['taxi-arriveby:20:00', 'taxi-destination:warkworth house', 'taxi-pricerange:moderate']
+real_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college']
+pred_y: ['taxi-arriveby:19:30', 'taxi-departure:18:00', 'taxi-destination:eagle pub', 'taxi-leaveat:11:00']
+real_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station']
+pred_y: ['taxi-departure:clare college', 'taxi-destination:parkside police station', 'taxi-arriveby:20:00']
+real_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station']
+pred_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station', 'taxi-leaveat:07:00', 'hotel-bookday:monday', 'hotel-bookpeople:3', 'hotel-bookstay:overnight', 'hotel-internet:yes', 'hotel-name:warkworth house', 'hotel-parking:free', 'hotel-pricerange:budget', 'hotel-stars:2', 'hotel-type:bedandbreakfast']
+tp: 11, fp: 45, fn: 1
+F1: 0.32352941176470584
+Precision: 0.19642857142857142
+Recall: 0.9166666666666666

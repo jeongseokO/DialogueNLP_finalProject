@@ -1,0 +1,25 @@
+Using GPU: 0
+Traceback (most recent call last):
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test_py/inform_test.py", line 173, in <module>
+    main()
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test_py/inform_test.py", line 167, in main
+    model, tokenizer = load_model()
+                       ^^^^^^^^^^^^
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test_py/inform_test.py", line 86, in load_model
+    tokenizer = AutoTokenizer.from_pretrained("../../../../data/jeongseokoh/hub/tokenizer/models--meta-llama--Llama-2-7b-chat-hf/snapshots/c1b0db933684edbfe29a06fa47eb19cc48025e93/")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeongseokoh/miniconda3/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 718, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeongseokoh/miniconda3/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 550, in get_tokenizer_config
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/jeongseokoh/miniconda3/lib/python3.11/site-packages/transformers/utils/hub.py", line 430, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/jeongseokoh/miniconda3/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/jeongseokoh/miniconda3/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '../../../../data/jeongseokoh/hub/tokenizer/models--meta-llama--Llama-2-7b-chat-hf/snapshots/c1b0db933684edbfe29a06fa47eb19cc48025e93/'. Use `repo_type` argument if needed.
+srun: error: gpu-1: task 0: Exited with exit code 1

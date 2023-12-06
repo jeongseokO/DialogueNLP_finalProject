@@ -1,0 +1,6 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.04s/it]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd-gpu-1: error: *** JOB 462 ON gpu-1 CANCELLED AT 2023-12-06T11:34:11 ***
+srun: forcing job termination
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [10:19<1:32:58, 619.78s/it] 20%|██        | 2/10 [11:34<39:55, 299.38s/it]  slurmstepd-gpu-1: error: *** STEP 462.0 ON gpu-1 CANCELLED AT 2023-12-06T11:34:11 ***

@@ -1,0 +1,2 @@
+slurmstepd-gpu-1: error: execve(): CUDA_VISIBLE_DEVICES=2: No such file or directory
+srun: error: gpu-1: task 0: Exited with exit code 2

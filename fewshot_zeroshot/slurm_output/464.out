@@ -1,0 +1,34 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.27it/s]
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [03:46<34:01, 226.88s/it] 20%|██        | 2/10 [04:47<17:13, 129.19s/it] 30%|███       | 3/10 [05:54<11:44, 100.61s/it] 40%|████      | 4/10 [07:17<09:21, 93.58s/it]  50%|█████     | 5/10 [14:19<17:40, 212.12s/it] 60%|██████    | 6/10 [15:35<11:03, 165.99s/it] 70%|███████   | 7/10 [19:48<09:42, 194.33s/it] 80%|████████  | 8/10 [20:39<04:57, 148.68s/it] 90%|█████████ | 9/10 [25:08<03:06, 186.28s/it]100%|██████████| 10/10 [35:00<00:00, 311.54s/it]100%|██████████| 10/10 [35:00<00:00, 210.04s/it]
+real_y: ['find_hotel']
+pred_y: ['hotel-pricerange:$200', 'hotel-location:citycenter', 'hotel-type:luxury']
+real_y: ['find_hotel', 'find_restaurant', 'find_hospital']
+pred_y: ['hotel-pricerange:moderate', 'hotel-area:south', 'hotel-wifi:yes']
+real_y: ['find_hotel']
+pred_y: ['hotel-name:bridge guest house', 'hotel-area:south', 'hotel-pricerange:moderate', 'hotel-wifi:yes']
+real_y: ['find_restaurant']
+pred_y: ['hotel-area:south', 'hotel-pricerange:moderate', 'restaurant-area:near_hotel', 'restaurant-food:chinese']
+real_y: ['find_restaurant', 'find_hospital']
+pred_y: ['restaurant-name:alimentum', 'attraction-area:citycenter', 'attraction-type:restaurant', 'reservation-day:monday', 'reservation-time:19:00', 'reservation-people:3', 'reservation-phone:555-555-5555']
+real_y: ['']
+pred_y: ['restaurant-name:alimentum', 'attraction-area:south', 'attraction-type:restaurant', 'attraction-price-range:moderate']
+real_y: ['find_taxi']
+pred_y: ['taxi-arriveby:20:00', 'taxi-destination:hotel-warkworth-house', 'taxi-departure:18:00']
+real_y: ['find_taxi']
+pred_y: ['taxi-departure:clare college', 'taxi-arriveby:20:00']
+real_y: ['find_taxi', 'find_police']
+pred_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station', 'taxi-leaveat:18:00']
+real_y: ['']
+pred_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station', 'taxi-leaveat:07:00', 'hotel-bookday:yes', 'hotel-bookpeople:3', 'hotel-bookstay:1 night', 'hotel-internet:available', 'hotel-name:the cambridge hotel', 'hotel-parking:free', 'hotel-pricerange:expensive', 'hotel-stars:5', 'hotel-type:luxury']
+tp: 0, fp: 44, fn: 0
+Traceback (most recent call last):
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test.py", line 249, in <module>
+    main()
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test.py", line 245, in main
+    metrics = evaluate(model, tokenizer, test_dataset)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test.py", line 228, in evaluate
+    recall = tp / (tp + fn)
+             ~~~^~~~~~~~~~~
+ZeroDivisionError: division by zero
+srun: error: gpu-1: task 0: Exited with exit code 1

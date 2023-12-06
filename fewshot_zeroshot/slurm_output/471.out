@@ -1,0 +1,35 @@
+Using GPU: 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.33s/it]
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:14<02:06, 14.10s/it] 20%|██        | 2/10 [00:15<00:55,  6.88s/it] 30%|███       | 3/10 [00:18<00:32,  4.70s/it] 40%|████      | 4/10 [00:20<00:22,  3.74s/it] 50%|█████     | 5/10 [00:30<00:30,  6.18s/it] 60%|██████    | 6/10 [00:34<00:20,  5.17s/it] 70%|███████   | 7/10 [00:43<00:19,  6.51s/it] 80%|████████  | 8/10 [00:45<00:09,  4.99s/it] 90%|█████████ | 9/10 [00:47<00:04,  4.08s/it]100%|██████████| 10/10 [01:02<00:00,  7.60s/it]100%|██████████| 10/10 [01:02<00:00,  6.26s/it]
+real_y: ['']
+pred_y: ['answer']
+real_y: ['hotel-area:south', 'hotel-internet:yes', 'hotel-pricerange:moderate']
+pred_y: ['answer']
+real_y: ['hotel-area:south', 'hotel-internet:yes', 'hotel-pricerange:moderate']
+pred_y: ['answer']
+real_y: ['restaurant-area:south', 'restaurant-food:chinese', 'hotel-area:south', 'hotel-internet:yes', 'hotel-pricerange:moderate']
+pred_y: ['answer']
+real_y: ['restaurant-name:restaurant alimentum']
+pred_y: ['answer']
+real_y: ['restaurant-name:restaurant alimentum']
+pred_y: ['answer']
+real_y: ['taxi-arriveby:20:00']
+pred_y: ['answer']
+real_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college']
+pred_y: ['answer']
+real_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station']
+pred_y: ['answer']
+real_y: ['taxi-arriveby:20:00', 'taxi-departure:clare college', 'taxi-destination:parkside police station']
+pred_y: ['answer']
+tp: 0, fp: 0, fn: 19
+Traceback (most recent call last):
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test_py/inform_test.py", line 173, in <module>
+    main()
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test_py/inform_test.py", line 169, in main
+    metrics = evaluate(model, tokenizer, test_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeongseokoh/DialogueNLP_finalProject/fewshot_zeroshot/test_py/inform_test.py", line 152, in evaluate
+    precision = tp / (tp + fp)
+                ~~~^~~~~~~~~~~
+ZeroDivisionError: division by zero
+srun: error: gpu-1: task 0: Exited with exit code 1
